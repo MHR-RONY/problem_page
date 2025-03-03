@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Problems - CodeMaster</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="problems.css" />
+    <script type="module" src="script.js"></script>
+    <script type="module" src="problems.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <span>CodeMaster</span>
+      </div>
+      <nav>
+        <a href="/">Premium</a>
+        <a href="/page2.html">Explore</a>
+        <a href="/problems.html" class="active">Problems</a>
+        <a href="/">Developer</a>
+        <a href="/" class="sign-in">Sign in</a>
+      </nav>
+    </header>
+
+    <main class="problems-main">
+      <div class="problems-container">
+        <section class="rating-section">
+          <div class="rating-header">
+            <i class="fas fa-chart-line"></i>
+            Rating
+            <span class="challenge-badge">
+              <i class="fas fa-fire"></i>
+              Daily Challenge
+            </span>
+          </div>
+          <div class="rating-buttons">
+            <button class="rating-btn easy">
+              <span class="rating-tooltip">Newbie Level</span>
+              800
+            </button>
+            <button class="rating-btn easy">
+              <span class="rating-tooltip">Beginner Level</span>
+              900
+            </button>
+            <button class="rating-btn easy">
+              <span class="rating-tooltip">Beginner Level</span>
+              1000
+            </button>
+            <button class="rating-btn medium active">
+              <span class="rating-tooltip">Intermediate Level</span>
+              1100
+            </button>
+            <button class="rating-btn medium">
+              <span class="rating-tooltip">Intermediate Level</span>
+              1200
+            </button>
+            <button class="rating-btn medium">
+              <span class="rating-tooltip">Intermediate Level</span>
+              1300
+            </button>
+            <button class="rating-btn medium">
+              <span class="rating-tooltip">Advanced Level</span>
+              1400
+            </button>
+            <button class="rating-btn hard">
+              <span class="rating-tooltip">Advanced Level</span>
+              1500
+            </button>
+            <button class="rating-btn hard">
+              <span class="rating-tooltip">Expert Level</span>
+              1600
+            </button>
+            <button class="rating-btn hard">
+              <span class="rating-tooltip">Expert Level</span>
+              1700
+            </button>
+            <button class="rating-btn hard">
+              <span class="rating-tooltip">Master Level</span>
+              1800
+            </button>
+            <button class="rating-btn hard">
+              <span class="rating-tooltip">Master Level</span>
+              1900
+            </button>
+          </div>
+          <div class="rating-info">
+            <i class="fas fa-info-circle"></i>
+            Ratings are based on problem difficulty and competition level
+            <div class="rating-legend">
+              <div class="legend-item">
+                <div class="legend-color newbie"></div>
+                <span>Newbie</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color experienced"></div>
+                <span>Experienced</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color expert"></div>
+                <span>Expert</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="progress-cards">
+          <div class="progress-card">
+            <h3><i class="fas fa-chart-pie"></i> Rating Progress</h3>
+            <div class="progress-content">
+              <div class="progress-numbers">
+                <div class="progress-fraction">0/31</div>
+                <div class="progress-label">Problems Solved</div>
+              </div>
+              <div class="progress-circle">
+                <div class="progress-percentage">0%</div>
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    fill="none"
+                    stroke="#f0f0f0"
+                    stroke-width="5"
+                  />
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    fill="none"
+                    stroke="#3498db"
+                    stroke-width="5"
+                    stroke-dasharray="220"
+                    stroke-dashoffset="220"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <h3><i class="fas fa-tasks"></i> Overall Progress</h3>
+            <div class="progress-content">
+              <div class="progress-numbers">
+                <div class="progress-fraction">0/372</div>
+                <div class="progress-label">Problems Solved</div>
+              </div>
+              <div class="progress-circle">
+                <div class="progress-percentage">0%</div>
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    fill="none"
+                    stroke="#f0f0f0"
+                    stroke-width="5"
+                  />
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    fill="none"
+                    stroke="#3498db"
+                    stroke-width="5"
+                    stroke-dasharray="220"
+                    stroke-dashoffset="220"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-card leaderboard-card">
+            <h3><i class="fas fa-trophy"></i> Leaderboard</h3>
+            <div class="leaderboard-content">
+              <div class="leaderboard-value">N/A</div>
+              <div class="leaderboard-label">
+                <a href="#" class="leaderboard-link"
+                  >Rank <i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="problems-table-section">
+          <div class="connect-btn-container">
+            <button class="connect-btn">
+              <i class="fas fa-link"></i>
+              Connect Codeforces
+            </button>
+          </div>
+
+          <div class="problems-table">
+            <div class="problems-table-header">
+              <div class="header-item problem-header">
+                Problem <i class="fas fa-external-link-alt"></i>
+              </div>
+              <div class="header-item">Solution</div>
+              <div class="header-item">Notes</div>
+              <div class="header-item">Status</div>
+              <div class="header-item">Revisit</div>
+              <div class="header-item">Discuss</div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-easy"></span>
+                1. Erase First or Second Letter
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-easy"></span>
+                2. Quests
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-medium"></span>
+                3. Collecting Game
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-medium"></span>
+                4. Yarik and Array
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-medium"></span>
+                5. 250 Thousand Tons of TNT
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-hard"></span>
+                6. Deja Vu
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-medium"></span>
+                7. Building an Aquarium
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-hard"></span>
+                8. 2D Traveling
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="problems-table-row">
+              <div class="problem-cell">
+                <span class="problem-difficulty difficulty-hard"></span>
+                9. Cardboard for Pictures
+              </div>
+              <div class="solution-cell">
+                <button class="video-btn">
+                  <i class="fas fa-play-circle"></i>
+                </button>
+              </div>
+              <div class="notes-cell">
+                <button class="notes-btn">
+                  <i class="fas fa-file-alt"></i>
+                </button>
+              </div>
+              <div class="status-cell">
+                <div class="status-indicator"></div>
+              </div>
+              <div class="revisit-cell">
+                <button class="revisit-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </div>
+              <div class="discuss-cell">
+                <button class="discuss-btn">
+                  <i class="far fa-comment-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="accordion-section">
+          <div class="accordion">
+            <div class="accordion-header">
+              <h3>How were these problems chosen?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>
+                These problems were carefully selected to help you improve your
+                problem-solving skills and prepare for technical interviews.
+                They cover a range of difficulty levels and common algorithm
+                patterns.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-header">
+              <h3>Which problems should you solve?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <p>
+                We recommend starting with problems that match your current
+                skill level. Begin with the lower-rated problems and gradually
+                work your way up as you gain confidence and experience.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="statistics-section">
+          <h2>CP-31 Statistics</h2>
+          <div class="statistics-cards">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-info">
+                <div class="stat-title">Total Users</div>
+                <div class="stat-value">92190</div>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="stat-info">
+                <div class="stat-title">Today's Visits</div>
+                <div class="stat-value">5640</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="channels-section">
+          <h2>Explore our Channels</h2>
+          <div class="video-container">
+            <div class="video-thumbnail">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/kE5QWhrNjqY?si=OM9WHdJXMxM29ehd"
+                title="Competitive Programming 101"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0"
+              ></iframe>
+              <div class="video-overlay">
+                <div class="video-title"></div>
+                <div class="video-subtitle">
+                  <span class="video-level novice">Newbie</span>
+                  <span class="video-level-arrow">→</span>
+                  <span class="video-level master">Master</span>
+                </div>
+                <div class="video-caption">HOW TO START?</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="copyright">
+          <p>&copy; 2025 Codeclash. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/">Help Center</a>
+          <a href="/">Blog</a>
+          <a href="/">Bug Bounty</a>
+          <a href="/">Students</a>
+          <a href="/">Terms</a>
+          <a href="/">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
